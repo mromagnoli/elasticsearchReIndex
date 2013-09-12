@@ -78,7 +78,7 @@ def manageOpts(argv):
 	INDEX_OLD = ''
 	INDEX_NEW = ''
 	INDEX_TYPE = ''
-	HOST = 'http://192.168.222.93:9200/'
+	HOST = 'http://localhost:9200/'
 
 	for opt, arg in opts:
 		if opt in ('-h', '--help'):
@@ -106,7 +106,7 @@ def usage():
 	-o, --old-index: Index name from where data is pulled.
 	-n, --new-index: Index name where data is pushed, if not exists it is created.
 	-t, --type: Index type for destination index.
-	-s, --host: Host where ES lives. Default 'http://192.168.222.93:9200/'
+	-s, --host: Host where ES lives. Default 'http://localhost:9200/'
 	"""
 	print(message)
 
